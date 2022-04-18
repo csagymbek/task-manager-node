@@ -1,2 +1,12 @@
+const mongoose = require("mongoose");
 const connectionStr =
-  "mongodb+srv://ssagymbe:<password>@task-manager.pva7r.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+  "mongodb+srv://ssagymbe:27031989@task-manager.pva7r.mongodb.net/task-manager?retryWrites=true&w=majority";
+
+const connectDB = (url) => {
+  return mongoose.connect(connectionStr, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  });
+};
+
+module.exports = connectDB;
