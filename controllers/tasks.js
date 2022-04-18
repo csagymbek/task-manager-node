@@ -1,4 +1,4 @@
-const getAllTasks = (req, res) => {
+const getAlltasks = (req, res) => {
   res.send("get all tasks");
 };
 
@@ -9,18 +9,11 @@ const getTask = (req, res) => {
 const createTask = (req, res) => {
   res.json(req.body);
 };
-
 const updateTask = (req, res) => {
-  res.json(req.body);
+  res.send("update task");
 };
 const deleteTask = (req, res) => {
   res.send("delete task");
 };
 
-module.exports = {
-  getAllTasks,
-  getTask,
-  createTask,
-  updateTask,
-  deleteTask,
-};
+module.exports = { getAlltasks, getTask, createTask, updateTask, deleteTask };
